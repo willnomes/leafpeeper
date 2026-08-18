@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support - Leaf Peeper</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="logo">Leaf <span>Peeper</span></div>
+<div class="tag">Battery health and diagnostics for the Nissan Leaf.</div>
+<nav><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+</header>
+
+<h1>Support</h1>
+
+<div class="card">
+<p style="margin:0">Email <a href="mailto:willdevsapps@gmail.com">willdevsapps@gmail.com</a>
+and you will get a reply from a person. Please include your Leaf's model year, your
+adapter make and model, and your iOS version.</p>
+</div>
+
+<h2>My adapter will not connect</h2>
+<p>This is almost always the adapter, not the app. iOS cannot communicate with classic
+Bluetooth (Bluetooth 3.x) OBD-II adapters at all, and most inexpensive ELM327 dongles
+are exactly that. They work on Android, which is why the listings claim compatibility.</p>
+<p>Your adapter must be <strong>Bluetooth Low Energy</strong>, described as "BLE",
+"Bluetooth 4.0" or "Bluetooth Low Energy". The LELink2 BLE is a known-good choice.
+Wi-Fi adapters are not supported.</p>
+<p>Also note that BLE adapters are <strong>not</strong> paired in the iOS Bluetooth
+settings screen. Connect from inside the app instead. If you have paired it in iOS
+Settings, remove it there first.</p>
+
+<h2>The app connects but shows no battery data</h2>
+<p>Turn the car on, not just to accessory. The battery controller does not answer
+requests when the car is fully off. If data still does not appear, your adapter may not
+support the custom CAN headers this app needs. Email me with the adapter model and I
+will tell you whether it is on the known-good list.</p>
+
+<h2>A reading says "unverified" or "unsupported"</h2>
+<p>That is deliberate. Data layouts differ between Leaf generations, and the app will
+not show you a number it cannot stand behind. If you are seeing this on a car you think
+should be supported, please get in touch, since that is exactly the feedback that lets
+me add support for your generation.</p>
+
+<h2>Can I try it before buying an adapter?</h2>
+<p>Yes. Demo Mode is built into the app and available from first launch, with no adapter
+and no car required.</p>
+
+<h2>Does it work on Android?</h2>
+<p>Not yet. Leaf Peeper is iOS only for now.</p>
+
+<h2>Feature requests and bug reports</h2>
+<p>Both are welcome at <a href="mailto:willdevsapps@gmail.com">willdevsapps@gmail.com</a>.
+This is a small independent app and feedback genuinely shapes what gets built next.</p>
+
+<footer>
+<p>Leaf Peeper is not affiliated with, endorsed by, or sponsored by Nissan.</p>
+<p>Readings are informational only. They are not a substitute for a dealer diagnostic
+and should not be the sole basis for a vehicle purchase decision.</p>
+<p><a href="index.html">Home</a> &middot; <a href="privacy.html">Privacy</a></p>
+</footer>
+</div>
+</body>
+</html>
